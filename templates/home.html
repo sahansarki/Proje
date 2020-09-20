@@ -1,0 +1,77 @@
+<html>
+    <body bgcolor=#696969>
+
+        <center>
+
+        <h1> Kredi Uygulaması </h1><br>
+        <h1> Kategorik Değişkenler Ağacımızda Numeric Şekilde Dağıtıldığı İçin Girilecek Değişkenin Numeric Değerini Giriniz </h1><br>
+        <h1> Örneğin Term için 0-Short Term 1-Long Term </h1><br>
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Current Loan Amount :  <input type="text", name='a'> <br><br>
+            
+            <label for="terms-select">Term:</label>
+            <select name="b" id="term-select">
+                <option value="Short Term">Short Term</option>
+                <option value="Long Term">Long Term</option>
+                
+            </select> <br><br>
+            
+            Credit Score :  <input type="text", name='c'> <br><br>
+            Annual Income : <input type="text", name='d'> <br><br>
+            <label for="current_job-select">Years in current job:</label>
+            <select name="e" id="current_job-select">
+                <option value="< 1 year">< 1 year</option>
+                <option value="2 years">2 years</option>
+                <option value="3 years">3 years</option>
+                <option value="4 years">4 years</option>
+                <option value="5 years">5 years</option>
+                <option value="6 years">6 years</option>
+                <option value="7 years">7 years</option>
+                <option value="8 years">8 years</option>
+                <option value="9 years">9 years</option>
+                <option value="10+ years">10+ years</option>
+                
+            </select> <br><br>
+            <label for="home-select">Home Ownership:</label>
+            <select name="f" id="home-select">
+                <option value="Own Home">Own Home</option>
+                <option value="Rent">Rent</option>
+                <option value="Home Mortgage">Home Mortgage</option>
+                <option value="Have Mortgage">Have Mortgage</option>
+                
+            </select> <br><br>
+            <label for="purpose-select">Purpose:</label>
+            <select name="g" id="purpose-select">
+                <option value="Business Loan">Business Loan</option>
+                <option value="Buy House">Buy House</option>
+                <option value="Buy a Car">Buy a Car</option>
+                <option value="Debt Consolidation">Debt Consolidation</option>
+                <option value="Educational Expenses">Educational Expenses</option>
+                <option value="Home Improvements">Home Improvements</option>
+                <option value="Medical Bills">Medical Bills</option>
+                <option value="Other">Other</option>
+                <option value="Take a Trip">Take a Trip</option>
+                <option value="Major-purchase">Major-purchase</option>
+                <option value="Moving">Moving</option>
+                <option value="other">other</option>
+                <option value="Renewable-energy">Renewable-energy</option>
+                <option value="Small_business">Small_business</option>
+                <option value="Vacation">Vacation</option>
+                <option value="Wedding">Wedding</option>
+                
+            </select> <br><br>
+            Monthly Debt : <input type="text", name='h'> <br><br>
+            Years of Credit History : <input type="text", name='i'> <br><br>
+            Number of open account : <input type="text", name='j'> <br><br>
+            Current Credit Balance : <input type="text", name='k'> <br><br>
+            <br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        
+    </center>
+
+    </body>
+</html>
+
